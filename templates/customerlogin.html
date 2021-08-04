@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %} {% load widget_tweaks %}
+    <hr>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Customer Signup</title>
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'assets2/css/login.css' %}">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <style>
+                .container input {
+            padding: 5px;
+            margin-bottom: 30px;
+            width: 55%;
+            box-sizing: border-box;
+            box-shadow: yellow;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid rgb(98, 194, 8);
+        }
+        
+        .container input[type="submit"] {
+            border-radius: 25px; 
+            font-size: 20px;
+            height: 40px; 
+            cursor: pointer;
+            background: rgb(66, 133, 244);
+            color: #fff;
+            margin-bottom: 0;
+        }
+        
+        .container input[type="submit"]:hover {
+            background: #34F458;
+            color: #fff;
+        }
+        
+        .container form div {
+            position: relative;
+        }
+        
+        .container form div label {
+            position: absolute;
+            top: 3px;
+            pointer-events: none;
+            left: 0;
+            transition: .5s;
+        }
+        
+        .container input:focus~label,
+        .container input:valid~label {
+            left: 0;
+            top: -20px;
+            color: rgb(66, 133, 244);
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .container input:focus,
+        .container input:valid {
+            border-bottom: 2px solid rgb(66, 133, 244);
+        }
+        
+        .error_form {
+            top: 12px;
+            color: rgb(216, 15, 15);
+            font-size: 15px;
+            font-family: Helvetica;
+        }
+        
+        .form-control1 {
+            line-height: 1;
+        }
+        
+        .login-card .form-control {
+            line-height: 1;
+        }
+        
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            width: 55%;
+        }
+
+    </style>
+    <body>
+        <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+            <div class="container">
+              <div class="card login-card">
+                <div class="row no-gutters">
+                  <div class="col-md-5">
+                      <img style="width: 100%;height: 70%;object-fit: scale-down;" src="{% static 'assets/images/img.jpg' %}" alt="login" class="login-card-img">
+                    </div>
+                  
+                  <div class="col-md-7">
+                    <div class="card-body">
+                      
+                  
+                      <form id="registration_form" action="" method="POST" enctype="multipart/form-data"><input type='hidden'/>
+                         {% csrf_token %}
+                         <h1> LOGIN </h1>
+                         <br>
+                         <br>
+   
+    <form action ='' method ='post'>
+        <!-- {{csrf_token}} -->
+        {{form.as_p}}
+        <input type="submit">
+
+    </form>
+
+</body>
