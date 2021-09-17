@@ -143,5 +143,5 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
-# STATIC_ROOT = "C:/Users/SSS0073/Downloads/foodcourt/foodcourt/static"
+STATIC_ROOT = "C:/Users/SSS0073/Downloads/foodcourt/foodcourt/static"
 # MEDIA_ROOT=os.path.join(BASE_DIR,'static')
