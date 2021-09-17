@@ -1,2 +1,2 @@
 
-web: gunicorn django_project.wsgi:application
+web: node server.js
